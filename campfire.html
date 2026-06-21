@@ -1,168 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Campfire Event Guide</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<style>
-body{
-margin:0;
-background:#f6efd9;
-font-family:Arial,sans-serif;
-color:#2b2b2b;
-}
-
-.header{
-background:linear-gradient(#7a4b23,#5b3417);
-padding:40px 20px;
-text-align:center;
-color:white;
-border-bottom:6px solid #c48d4a;
-}
-
-.header h1{
-margin:0;
-font-size:42px;
-}
-
-.header p{
-margin-top:10px;
-opacity:.9;
-}
-
-.container{
-max-width:1200px;
-margin:auto;
-padding:25px;
-}
-
-.nav{
-display:flex;
-justify-content:center;
-gap:10px;
-flex-wrap:wrap;
-margin-bottom:25px;
-}
-
-.btn{
-background:#6aa84f;
-color:white;
-text-decoration:none;
-padding:12px 18px;
-border-radius:10px;
-font-weight:bold;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:18px;
-}
-
-.card{
-background:white;
-border:3px solid #c48d4a;
-border-radius:14px;
-padding:20px;
-box-shadow:0 3px 8px rgba(0,0,0,.15);
-}
-
-.card h3{
-margin-top:0;
-color:#7a4b23;
-}
-
-.open{
-display:inline-block;
-margin-top:10px;
-background:#6aa84f;
-color:white;
-text-decoration:none;
-padding:10px 14px;
-border-radius:8px;
-font-weight:bold;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+<div class="site-wrap">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">GAG</span>
+        <span>Campfire Event Guide</span>
+      </a>
+      <nav class="top-links" aria-label="Campfire navigation">
+        <a class="top-link" href="index.html">All Guides</a>
+        <a class="top-link" href="https://gag2.miraheze.org/wiki/Main_Page">Wiki</a>
+      </nav>
+    </div>
+  </header>
 
-<div class="header">
-<h1>🔥 Campfire Event Guide</h1>
-<p>Community-made guide for the Grow a Garden 2 Campfire Event</p>
+  <section class="hero">
+    <div class="hero-panel wiki-panel">
+      <div class="hero-copy">
+        <span class="eyebrow">Latest Event Guide</span>
+        <h1>Campfire Event</h1>
+        <p class="lead">Browse the Campfire guide by section. Each page uses the uploaded guide images directly so the text stays sharper than screenshots.</p>
+        <div class="hero-actions">
+          <a class="button" href="campfire-intro.html">Start Reading</a>
+          <a class="button secondary" href="#sections">Jump to Sections</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="0.png" alt="Campfire Event guide cover" loading="eager">
+      </div>
+    </div>
+  </section>
+
+  <main class="content" id="sections">
+    <div class="section-title">Campfire Sections</div>
+    <section class="section-grid" aria-label="Campfire guide sections">
+      <article class="card wiki-panel">
+        <img class="card-image" src="0.png" alt="Introduction preview" loading="lazy">
+        <h3>Introduction</h3>
+        <p>Guide intro, main event buttons, and credits.</p>
+        <a class="button full" href="campfire-intro.html">Open</a>
+      </article>
+
+      <article class="card wiki-panel">
+        <img class="card-image" src="3.png" alt="Event Info preview" loading="lazy">
+        <h3>Event Info</h3>
+        <p>General Campfire Event details and overview pages.</p>
+        <a class="button full" href="event-info.html">Open</a>
+      </article>
+
+      <article class="card wiki-panel">
+        <img class="card-image" src="7.png" alt="Workshop preview" loading="lazy">
+        <h3>Workshop</h3>
+        <p>Campfire Workshop guide pages.</p>
+        <a class="button full" href="workshop.html">Open</a>
+      </article>
+
+      <article class="card wiki-panel">
+        <img class="card-image" src="14.png" alt="Bearnaby preview" loading="lazy">
+        <h3>Bearnaby</h3>
+        <p>Bearnaby section and related event info.</p>
+        <a class="button full" href="bearnaby.html">Open</a>
+      </article>
+
+      <article class="card wiki-panel">
+        <img class="card-image" src="17.png" alt="Campfire Keeper preview" loading="lazy">
+        <h3>Campfire Keeper</h3>
+        <p>Campfire Keeper guide pages.</p>
+        <a class="button full" href="campfire-keeper.html">Open</a>
+      </article>
+
+      <article class="card wiki-panel">
+        <img class="card-image" src="19.png" alt="Plants preview" loading="lazy">
+        <h3>Plants</h3>
+        <p>Campfire event plants and details.</p>
+        <a class="button full" href="plants.html">Open</a>
+      </article>
+
+      <article class="card wiki-panel">
+        <img class="card-image" src="24.png" alt="Pets preview" loading="lazy">
+        <h3>Pets</h3>
+        <p>Campfire event pets and details.</p>
+        <a class="button full" href="pets.html">Open</a>
+      </article>
+
+      <article class="card wiki-panel">
+        <img class="card-image" src="29.png" alt="Gear preview" loading="lazy">
+        <h3>Gear</h3>
+        <p>Campfire event gear pages.</p>
+        <a class="button full" href="gear.html">Open</a>
+      </article>
+
+      <article class="card wiki-panel">
+        <img class="card-image" src="31.png" alt="Cosmetics preview" loading="lazy">
+        <h3>Cosmetics</h3>
+        <p>Campfire event cosmetic pages.</p>
+        <a class="button full" href="cosmetics.html">Open</a>
+      </article>
+
+      <article class="card wiki-panel">
+        <img class="card-image" src="33.png" alt="Mutations preview" loading="lazy">
+        <h3>Mutations</h3>
+        <p>Campfire event mutation pages.</p>
+        <a class="button full" href="mutations.html">Open</a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">Campfire Event guide archive.</div>
+  </footer>
 </div>
-
-<div class="container">
-
-<div class="nav">
-<a class="btn" href="index.html">← All Guides</a>
-<a class="btn" href="https://gag2.miraheze.org/wiki/Main_Page">Wiki</a>
-</div>
-
-<div class="grid">
-
-<div class="card">
-<h3>Introduction</h3>
-<p>Overview of the Campfire Event.</p>
-<a class="open" href="campfire-intro.html">Open</a>
-</div>
-
-<div class="card">
-<h3>Event Info</h3>
-<p>General event information.</p>
-<a class="open" href="event-info.html">Open</a>
-</div>
-
-<div class="card">
-<h3>Campfire Workshop</h3>
-<p>Workshop information.</p>
-<a class="open" href="workshop.html">Open</a>
-</div>
-
-<div class="card">
-<h3>Bearnaby</h3>
-<p>Bearnaby guide.</p>
-<a class="open" href="bearnaby.html">Open</a>
-</div>
-
-<div class="card">
-<h3>Campfire Keeper</h3>
-<p>Campfire Keeper guide.</p>
-<a class="open" href="campfire-keeper.html">Open</a>
-</div>
-
-<div class="card">
-<h3>Plants</h3>
-<p>Campfire event plants.</p>
-<a class="open" href="plants.html">Open</a>
-</div>
-
-<div class="card">
-<h3>Pets</h3>
-<p>Campfire event pets.</p>
-<a class="open" href="pets.html">Open</a>
-</div>
-
-<div class="card">
-<h3>Gear</h3>
-<p>Campfire event gear.</p>
-<a class="open" href="gear.html">Open</a>
-</div>
-
-<div class="card">
-<h3>Cosmetics</h3>
-<p>Campfire event cosmetics.</p>
-<a class="open" href="cosmetics.html">Open</a>
-</div>
-
-<div class="card">
-<h3>Mutations</h3>
-<p>Campfire event mutations.</p>
-<a class="open" href="mutations.html">Open</a>
-</div>
-
-</div>
-</div>
-
 </body>
 </html>
