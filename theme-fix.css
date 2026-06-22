@@ -101,6 +101,7 @@ body {
 .article-body {
   line-height: 0;
   overflow: hidden;
+  background: #7b3f1f;
 }
 
 .guide-image {
@@ -108,17 +109,17 @@ body {
   width: 100%;
   max-width: 100%;
   height: auto;
-  margin: 0 auto;
+  margin: 0 auto -1px;
   border: 0;
   border-radius: 0;
-  background: transparent;
+  background: #7b3f1f;
   box-shadow: none;
   vertical-align: top;
 }
 
 .guide-image + .guide-image {
-  margin-top: -1px;
-  clip-path: none;
+  margin-top: -4px;
+  clip-path: inset(2px 0 0 0);
 }
 
 body.has-reading-nav .site-wrap {
