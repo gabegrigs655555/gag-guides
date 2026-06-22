@@ -1,8 +1,9 @@
 # Assets
 
-This folder is the organized home for site assets going forward.
+This folder is the organized home for shared site assets.
 
 - `css/site.css` is the public stylesheet entrypoint used by the HTML pages.
-- `images/logos/` contains clean, URL-safe logo filenames used by the site.
-- Root-level page screenshots (`0.png` through `34.png`) are still kept at the repository root so the restored image guide remains stable. They can be moved into `assets/images/guide-pages/` later after the live pages are confirmed working.
-- Public pages now live in folders: `guides/campfire/` for the guide and `about/` for info pages. Root HTML files are compatibility redirects.
+- `images/logos/` contains reusable site logos with clean URL-safe filenames.
+- The active Campfire guide logo uses the root upload `Campfire Event Guide Title.png` so it matches the file added through GitHub.
+- Root-level guide screenshots (`0.png` through `34.png`) are kept at the repository root because the live reader pages depend on those stable URLs.
+- Public pages live in folders: `guides/campfire/` for the Campfire guide sections and `about/` for the info pages.
