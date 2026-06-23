@@ -166,6 +166,24 @@ body.no-page-overlap .guide-image + .guide-image {
   clip-path: none;
 }
 
+body.event-info-page .article-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #e95c23;
+}
+
+body.event-info-page .guide-image {
+  flex: 0 0 auto;
+  margin: 0 auto;
+  transform: translateZ(0);
+}
+
+body.event-info-page .guide-image + .guide-image {
+  margin-top: -5px;
+  clip-path: inset(4px 0 0 0);
+}
+
 body.has-reading-nav .site-wrap {
   padding-bottom: 100px;
 }
@@ -219,13 +237,13 @@ body.has-reading-nav .site-wrap {
 }
 
 .menu-button::after {
-  content: "▾";
+  content: "v";
   margin-left: 6px;
   font-size: 10px;
 }
 
 .top-menu[open] .menu-button::after {
-  content: "▴";
+  content: "^";
 }
 
 .top-menu:not([open]) > .top-links {
