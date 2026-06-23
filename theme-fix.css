@@ -38,7 +38,8 @@ body {
 
 .top-link,
 .button,
-.side-link {
+.side-link,
+.menu-button {
   background: #5a2a10;
 }
 
@@ -149,6 +150,52 @@ body.has-reading-nav .site-wrap {
   min-width: 0;
 }
 
+.top-menu {
+  display: contents;
+}
+
+.menu-button {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  padding: 7px 10px;
+  color: var(--gag-white);
+  border: 3px solid var(--gag-border-brown);
+  border-radius: 5px;
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, .1), inset 0 -3px 0 rgba(0, 0, 0, .22);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1;
+  text-shadow: 0 2px 0 #000;
+}
+
+.menu-button::-webkit-details-marker {
+  display: none;
+}
+
+.menu-button::after {
+  content: "▾";
+  margin-left: 6px;
+  font-size: 10px;
+}
+
+.top-menu[open] .menu-button::after {
+  content: "▴";
+}
+
+.top-menu:not([open]) > .top-links {
+  display: flex;
+}
+
+.footer-inner::after {
+  content: "© 2026 Grow a Garden Guides. All rights reserved.";
+  display: block;
+  margin-top: 6px;
+  color: #caa98b;
+}
+
 @media (min-width: 760px) {
   .section-grid {
     grid-template-columns: repeat(4, minmax(130px, 1fr));
@@ -164,6 +211,63 @@ body.has-reading-nav .site-wrap {
 }
 
 @media (max-width: 560px) {
+  .topbar-inner {
+    position: relative;
+    min-height: 38px;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4px 0;
+  }
+
+  .brand {
+    flex: 1 1 0;
+    min-width: 0;
+    min-height: 32px;
+  }
+
+  .brand span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .top-menu {
+    display: block;
+    flex: 0 0 auto;
+  }
+
+  .menu-button {
+    display: inline-flex;
+  }
+
+  .top-menu:not([open]) > .top-links {
+    display: none;
+  }
+
+  .top-menu[open] > .top-links {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    right: 0;
+    z-index: 30;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6px;
+    width: 100%;
+    padding: 7px;
+    border: 4px solid var(--gag-border-brown);
+    border-radius: 6px;
+    background-color: var(--gag-green-dark);
+    background-image: var(--weld-url);
+    background-size: 42px 42px;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, .45);
+  }
+
+  .top-menu .top-link {
+    width: 100%;
+  }
+
   .reading-nav {
     bottom: 8px;
     gap: 6px;
