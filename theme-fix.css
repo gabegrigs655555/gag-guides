@@ -73,6 +73,11 @@ body {
   max-height: 300px;
 }
 
+.campfire-hero-image {
+  width: min(760px, 100%);
+  max-height: none;
+}
+
 .nav-thumb.logo-thumb {
   padding: 8px;
   object-fit: contain;
@@ -83,6 +88,16 @@ body {
   height: 120px;
   padding: 8px;
   object-fit: contain;
+}
+
+.section-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section-grid .nav-card {
+  flex: 0 1 148px;
 }
 
 .main-nav-grid.single-guide {
@@ -268,20 +283,6 @@ body.has-reading-nav .site-wrap {
   display: block;
   margin-top: 6px;
   color: #caa98b;
-}
-
-@media (min-width: 760px) {
-  .section-grid {
-    grid-template-columns: repeat(4, minmax(130px, 1fr));
-  }
-
-  .section-grid .nav-card:nth-child(9) {
-    grid-column: 2;
-  }
-
-  .section-grid .nav-card:nth-child(10) {
-    grid-column: 3;
-  }
 }
 
 @media (max-width: 560px) {
